@@ -28,6 +28,7 @@ namespace tp3_Csharp
             public double preco;
             public int quantDisponivel;
 
+        //metodo
             public void exibirDados()
         {
             Console.WriteLine($"Dados do seu ingresso: {nomeDoShow}, Valor: {preco}, Ficou entre os {quantDisponivel} sortudos!");
