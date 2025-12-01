@@ -1,9 +1,11 @@
-﻿namespace exercicio_02_tp3
+﻿using System;
+namespace exercicio_02_tp3
 {
-    internal class Program
+   public static class Exercicio2
     {
-        static void Main(string[] args)
+        public static void Run()
         {
+            Console.WriteLine("\n--- Exercício 2 ---");
             //objeto
             Ingresso i1 = new Ingresso();
 
@@ -24,10 +26,8 @@
             public int quantDisponivel;
 
             public void exibirDados()
-        { 
-                Console.WriteLine($"Dados do seu ingresso:  {nomeDoShow}," +
-                    $"Valor:  {preco}," +
-                    $"Ficou entre os  { quantDisponivel} sortudos");
-                }
+        {
+            Console.WriteLine($"Dados do seu ingresso: {nomeDoShow}, Valor: {preco}, Ficou entre os {quantDisponivel} sortudos!");
+        }
         }
 }

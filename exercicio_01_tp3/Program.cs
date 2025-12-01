@@ -6,6 +6,8 @@ namespace tp3_Csharp
     {
         public static void Run()
         {
+            Console.WriteLine("\n--- Exercício 1 ---");
+
             //objeto
             Pessoa p1 = new Pessoa();
 
