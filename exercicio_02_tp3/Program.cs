@@ -1,5 +1,5 @@
 ﻿using System;
-namespace exercicio_02_tp3
+namespace tp3_Csharp
 {
    public static class Exercicio2
     {
