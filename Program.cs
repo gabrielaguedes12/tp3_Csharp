@@ -17,10 +17,19 @@ namespace tp3_Csharp
                 {
                     case 1: Exercicio1.Run(); break;
                     case 2: Exercicio2.Run(); break;
-
-                    // Depois você vai adicionar os outros cases aqui!
+                    case 3: Exercicio3.Run(); break;
+                    case 4: Exercicio4.Run(); break;
+                    case 5: Exercicio5.Run(); break;
+                    case 6: Exercicio6.Run(); break;
+                    case 7: Exercicio7.Run(); break;
+                    case 8: Exercicio8.Run(); break;
+                    case 9: Exercicio9.Run(); break;
+                    case 10: Exercicio10.Run(); break;
+                    case 11: Exercicio11.Run(); break;
+                    case 12: Exercicio12.Run(); break;
                     default: Console.WriteLine("Opção inválida!"); break;
                 }
+
             }
         }
     }

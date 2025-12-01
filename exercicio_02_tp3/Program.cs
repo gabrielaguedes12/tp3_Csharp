@@ -1,7 +1,7 @@
 ﻿using System;
 namespace tp3_Csharp
 {
-   public static class Exercicio2
+    public static class Exercicio2
     {
         public static void Run()
         {
