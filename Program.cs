@@ -6,10 +6,25 @@ namespace tp3_Csharp
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Programa iniciado!");
+
             while (true)
             {
                 Console.WriteLine("\nEscolha o exercício para testar (1 a 12) ou 0 para sair:");
-                int op = int.Parse(Console.ReadLine());
+
+                string? entrada = Console.ReadLine();
+                if (string.IsNullOrWhiteSpace(entrada))
+                {
+                    Console.WriteLine("Entrada inválida, tente novamente!");
+                    continue;
+                }
+
+                int op;
+                if (!int.TryParse(entrada, out op))
+                {
+                    Console.WriteLine("Digite apenas números!");
+                    continue;
+                }
 
                 if (op == 0) break;
 
@@ -29,8 +44,11 @@ namespace tp3_Csharp
                     case 12: Exercicio12.Run(); break;
                     default: Console.WriteLine("Opção inválida!"); break;
                 }
-
             }
+
+            Console.WriteLine(" Programa finalizado!");
+            Console.WriteLine("Pressione qualquer tecla para sair...");
+            Console.ReadKey(true);
         }
     }
 }
