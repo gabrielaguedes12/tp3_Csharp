@@ -14,7 +14,6 @@ namespace tp3_Csharp
             //atributos
             p1.nome = "Maria Alice";
             p1.idade = 20;
-            p1.altura = 1.70f;
 
             p1.exibirCaracteristicas();
         }
@@ -25,12 +24,11 @@ namespace tp3_Csharp
     {
         public string nome;
         public int idade;
-        public float altura;
 
         //metodo
         public void exibirCaracteristicas()
         {
-            Console.WriteLine($"característica: {nome}, {idade} anos, {altura}m");
+            Console.WriteLine($"característica: {nome}, {idade} anos");
         }
     }
 }
