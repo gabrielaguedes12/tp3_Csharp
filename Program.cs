@@ -4,15 +4,28 @@
     {
         static void Main(string[] args)
         {
-            //Classe
-            //Console.WriteLine("Objeto:");
+            //objeto
+            Pessoa p1= new Pessoa();
 
-            // Console.WriteLine("Campos ou Atributos:");
+            //atributos
+            p1.nome = "Maria Alice";
+            p1.idade = 20;
+            p1.altura = 1.70f;
 
-            //Console.WriteLine("Métodos no contexto da POO:");
+            p1.exibirCaracteristicas();
+        }
+    }
+    //classe
+    public class Pessoa
+    {
+        public string nome;
+        public int idade;            
+        public float altura;
 
-
-
+        //metodo
+        public void exibirCaracteristicas()
+        {
+            Console.WriteLine($"característica: {nome}, {idade} anos, {altura}m");
         }
     }
 }
