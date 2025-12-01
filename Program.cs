@@ -4,15 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Classe:");
+            //Classe
+            //Console.WriteLine("Objeto:");
 
-            Console.WriteLine("Objeto:");
+            // Console.WriteLine("Campos ou Atributos:");
 
-            Console.WriteLine("Campos ou Atributos:");
+            //Console.WriteLine("Métodos no contexto da POO:");
 
-            Console.WriteLine("Métodos no contexto da POO:");
 
-            
 
         }
     }
