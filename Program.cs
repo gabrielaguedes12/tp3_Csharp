@@ -1,31 +1,26 @@
-﻿namespace tp3_Csharp
+﻿using System;
+
+namespace tp3_Csharp
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            //objeto
-            Pessoa p1= new Pessoa();
+            while (true)
+            {
+                Console.WriteLine("\nEscolha o exercício para testar (1 a 12) ou 0 para sair:");
+                int op = int.Parse(Console.ReadLine());
 
-            //atributos
-            p1.nome = "Maria Alice";
-            p1.idade = 20;
-            p1.altura = 1.70f;
+                if (op == 0) break;
 
-            p1.exibirCaracteristicas();
-        }
-    }
-    //classe
-    public class Pessoa
-    {
-        public string nome;
-        public int idade;            
-        public float altura;
-
-        //metodo
-        public void exibirCaracteristicas()
-        {
-            Console.WriteLine($"característica: {nome}, {idade} anos, {altura}m");
+                switch (op)
+                {
+                    case 1: Exercicio1.Run(); break;
+                   
+                    // Depois você vai adicionar os outros cases aqui!
+                    default: Console.WriteLine("Opção inválida!"); break;
+                }
+            }
         }
     }
 }
