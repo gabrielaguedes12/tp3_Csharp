@@ -33,7 +33,7 @@ namespace tp3_Csharp
         //metodo
         public void exibirCaracteristicas()
         {
-            Console.WriteLine($"característica da Matrícula: {nomeDoAluno}, {curso}, {numeroMatricula}, {situacao}, {dataInicial}");
+            Console.WriteLine($"Característica da Matrícula: Nome do nomeDoAluno: { nomeDoAluno},Curso:  {curso}, Núm  da Matricula: { numeroMatricula},Situação: { situacao}, Data: { dataInicial}");
         }
     }
 }
