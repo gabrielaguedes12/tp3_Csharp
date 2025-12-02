@@ -7,14 +7,17 @@ namespace tp3_Csharp
         public static void Run()
         {
             Console.WriteLine("\n--- Exercício 3 ---");
+
             //objeto
-            Ingresso1 i1 = new Ingresso1();
+            Ingresso3 i1 = new Ingresso3();
 
             //atributos
-            //nome do show- necessario para reconhecer 
+            //nome do show - necessário para reconhecer
             i1.nomeDoShow = "Terno Rei";
-            //o valor é necessario em qualquer ingresso
+
+            //o valor é necessário em qualquer ingresso
             i1.preco = 25.00;
+
             //a quantidade deveria estar no banco de dados, porém é algo que pode ser bom para o comprador saber
             i1.quantDisponivel = 150;
 
@@ -22,11 +25,10 @@ namespace tp3_Csharp
 
             i1.AtualizarValor(35.00);
             i1.AtualizarQuantidade(80);
-
         }
     }
-    //classe
-    public class Ingresso1
+
+    public class Ingresso3
     {
         public string nomeDoShow;
         public double preco;
@@ -44,10 +46,11 @@ namespace tp3_Csharp
             Console.WriteLine("Valor do segundo lote atualizado");
             ExibirDados();
         }
+
         public void AtualizarQuantidade(int novaQuantidade)
         {
             quantDisponivel = novaQuantidade;
-            Console.WriteLine("Quantidade do segundo lote atualizado");
+            Console.WriteLine("Quantidade do segundo lote atualizada");
             ExibirDados();
         }
     }
