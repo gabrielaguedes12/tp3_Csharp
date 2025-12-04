@@ -17,7 +17,7 @@ namespace tp3_Csharp
             m1.situacao = "Ativa";
             m1.dataInicial = "10/12/2003";
 
-            m1.exibirCaracteristicas();
+            m1.ExibirCaracteristicas();
         }
     }
 
@@ -31,7 +31,7 @@ namespace tp3_Csharp
         public string dataInicial;
 
         //metodo
-        public void exibirCaracteristicas()
+        public void ExibirCaracteristicas()
         {
             Console.WriteLine($"Característica da Matrícula: Nome do nomeDoAluno: { nomeDoAluno},Curso:  {curso}, Núm  da Matricula: { numeroMatricula},Situação: { situacao}, Data: { dataInicial}");
         }
